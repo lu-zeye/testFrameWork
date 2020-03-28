@@ -10,5 +10,5 @@ suite.addTest(unittest.makeSuite(TestIHRMLogin))
 
 reportname = BASE_DIR + "/report/report.html"
 with open(reportname,'wb') as f:
-    runner = HTMLTestRunner(f,verbosity=2,description="这是测试报告",title="IHRM报告")
+    runner = HTMLTestRunner(f,verbosity=2,description="测试报告",title="IHRM报告")
     runner.run(suite)
